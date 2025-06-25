@@ -1,24 +1,45 @@
 img {
- border-radius: 200px; 
- height: 230px;
- 
+  border-radius: 200px;
+  height: 230px;
 }
-h2{
+
+h2 {
   font-size: 18px;
 }
-body{
+
+body {
   background-color: slateblue;
-  font-family: 'Trebuchet MS' ;
+  font-family: 'Trebuchet MS';
   color: white;
   text-align: center;
 }
-a{
+
+a {
   background-color: white;
   font-size: 20px;
   border-radius: 10px;
   padding: 10px;
   display: block;
   text-align: center;
-  margin: 10px 500px 10px 500px;
+  margin: 10px auto; /* Center it */
+  width: 80%;         /* Responsive width */
+  max-width: 300px;   /* Limit size on large screens */
   color: slateblue;
+  text-decoration: none;
+}
+
+/* Optional: Make image smaller on small screens */
+@media (max-width: 600px) {
+  img {
+    height: 180px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  a {
+    font-size: 18px;
+    padding: 8px;
+  }
 }
